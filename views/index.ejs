@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Some app</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" >
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% for (var i =0; i < items.length; i++) { %>
+        <li><%= items[i].desc %></li>  
+      <% } %>
+    </ul>
+    
+    <form action="/add" method="post">
+      <input type="text" name="newItem" />
+      <input class="btn btn-default" type="submit" />
+    </form>
+    
+    
+    
+    
+    
+    
+    <script src="boostrap/dist/js/boostrap.js"></script>
+    <script src="jquery/dist/jquery.js"></script>
+  </body>
+</html>

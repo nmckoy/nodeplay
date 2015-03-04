@@ -11,7 +11,7 @@
         padding-top: 60px;
       }
       #chatBox {
-        height: 500px;
+        height: 300px;
         overflow: auto;
       }
       #roster {
@@ -80,11 +80,11 @@
           <div class="container-fluid" id="send">
             <div class="">
             <form class="form-horizontal" ng-submit="send()">
-              <div class="form-group ">
+              <div class="form-group">
                 <input type="text" class="form-control" ng-model="name" ng-change="setName()" placeholder="Your Name">
               </div>
               <div class="form-group ">
-                <textarea type="text" class="form-control" ng-model="text" placeholder="Message"></textarea>
+                <input type="text" class="form-control" ng-model="text" placeholder="Message"/>
               </div>
               <div class="form-group ">
                 <input type="submit" class="btn btn-primary" value="Send" ng-disabled="!text">
